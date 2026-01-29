@@ -91,33 +91,105 @@ header { background: rgba(0,0,0,0.7); backdrop-filter: blur(10px); border-bottom
   </div>
 </section>
 
-<!-- Prices -->
-<section id="prices" class="py-20 px-6 fade-in bg-gray-900/20">
-  <div class="max-w-7xl mx-auto text-center mb-12">
-    <h3 class="text-3xl font-bold neon-text mb-4">Service Prices</h3>
-    <p class="text-gray-400">Affordable rates for all services.</p>
+!-- Prices -->
+<section id="prices" class="py-28 px-6 fade-in bg-gradient-to-b from-gray-900/30 to-gray-900/80">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h3 class="text-4xl md:text-5xl font-bold neon-text glitch" data-text="Service Prices">Service Prices</h3>
+    <p class="text-gray-400 text-lg mt-3">Transparent pricing for all your digital & printing needs.</p>
   </div>
-  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-    <div class="glass-card text-center">
-      <h4 class="text-xl font-semibold mb-2">Photocopy</h4>
-      <p class="text-gray-300 mb-2">KES 10 per page</p>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+
+    <!-- Photocopy -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-copy text-cyan-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Photocopy</h4>
+          <p class="text-gray-300 text-lg">KES 10 per page</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">Fast & Affordable!</p>
+          <i class="fa-solid fa-bolt text-yellow-400 text-3xl mt-2"></i>
+        </div>
+      </div>
     </div>
-    <div class="glass-card text-center">
-      <h4 class="text-xl font-semibold mb-2">Printing</h4>
-      <p class="text-gray-300 mb-2">KES 10 per black & white page, KES 20 per color page</p>
+
+    <!-- Printing -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-print text-magenta-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Printing</h4>
+          <p class="text-gray-300 text-lg">KES 10 B/W, KES 20 Color</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">High-Quality Prints!</p>
+          <i class="fa-solid fa-star text-yellow-400 text-3xl mt-2"></i>
+        </div>
+      </div>
     </div>
-    <div class="glass-card text-center">
-      <h4 class="text-xl font-semibold mb-2">Document Editing</h4>
-      <p class="text-gray-300 mb-2">KES 150 per document</p>
+
+    <!-- Designing -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-palette text-purple-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Designing</h4>
+          <p class="text-gray-300 text-lg">KES 600+ per project</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">Creative & Professional!</p>
+          <i class="fa-solid fa-brush text-yellow-400 text-3xl mt-2"></i>
+        </div>
+      </div>
     </div>
-    <div class="glass-card text-center">
-      <h4 class="text-xl font-semibold mb-2">Designing</h4>
-      <p class="text-gray-300 mb-2">KES 500 per project</p>
+
+    <!-- Document Editing -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-file-pen text-yellow-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Document Editing</h4>
+          <p class="text-gray-300 text-lg">KES 150 per document</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">Professional & Fast!</p>
+          <i class="fa-solid fa-circle-check text-green-400 text-3xl mt-2"></i>
+        </div>
+      </div>
     </div>
-    <div class="glass-card text-center">
-      <h4 class="text-xl font-semibold mb-2">Consultation</h4>
-      <p class="text-gray-300 mb-2">KES 300 per session</p>
+
+    <!-- Passport Printing -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-id-card text-blue-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Passport Printing</h4>
+          <p class="text-gray-300 text-lg">KES 200 per 4 pasport photos</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">Quick & Secure!</p>
+          <i class="fa-solid fa-passport text-yellow-400 text-3xl mt-2"></i>
+        </div>
+      </div>
     </div>
+
+    <!-- Online Applications -->
+    <div class="price-card relative h-64 sm:h-56">
+      <div class="price-inner glass-card h-full flex flex-col justify-center items-center transition-transform duration-700 transform hover:rotate-y-180">
+        <div class="price-front flex flex-col justify-center items-center">
+          <i class="fa-solid fa-laptop-code text-green-400 text-4xl mb-3"></i>
+          <h4 class="text-2xl font-semibold mb-2">Online Applications</h4>
+          <p class="text-gray-300 text-lg">KES 300+</p>
+        </div>
+        <div class="price-back flex flex-col justify-center items-center">
+          <p class="text-xl font-semibold text-white">Fast & Reliable!</p>
+          <i class="fa-solid fa-globe text-yellow-400 text-3xl mt-2"></i>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
